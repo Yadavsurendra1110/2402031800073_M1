@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <h1 align="center"> Registration Form</h1>
+ <table border=2.5 align="center" >
+    <form id="registrationform" onsubmit="return validateForm()" width:200% ; height=400%>
+
+    <tr>
+        <td> First Name :</td>
+        <td> <input type="text" id="Firstname" name="Firstname" required placeholder="Enter your name"> </td>
+    </tr>
+    <tr>
+        <td>Last Name :</td>
+        <td> <input type="text" id="Lastname" name="Lastname" required placeholder="Enter your last name "></td>
+    </tr>
+
+    <tr> 
+        <td> Contact : </td>
+        <td> <input type="number" id="Contact" name="Contact" placeholder="Enter contact number"></td>
+    </tr>
+    <tr> 
+        <td>  Landline no :</td>
+        <td> <input type="number" id="Landline" name= "Landline" placeholder="Enter landline no"></td>  
+      </tr>
+      <tr> 
+        <td>  Email : </td>
+        <td> <input type="email" id="Email" name="Email" required placeholder="Enter your Email address"></td>
+      </tr>
+      <tr> 
+        <td>  Password :</td>
+        <td> <input type="password" id="passwd" name="passwd" required minlength="6" placeholder="Enter strong password"></td>
+      </tr>
+      <tr>
+        <td>  Date of Birth :</td>
+        <td> <input type="date" id="DOB" name="DOB" required></td>
+      </tr>
+      <tr>
+        <td>  AGE : </td>
+        <td> <input type="number" id="age" name="age" min="18" max="100"></td>
+
+      </tr>
+      <tr>
+        <td> Gender :</td>
+        <td> <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female</td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td> <input type="text" id="address"></td>
+      </tr>
+      <tr> 
+        <td> City : </td>
+        <td> <select name="city" id="city">
+        <option value="Ahmedabad"> Ahmedabad </option>
+    <option value="gandhinagar">Gandhinagar</option> </select> </td>
+        
+      </tr>
+      <tr>
+        <td>Pincode :</td>
+        <td> <imput type="number " id="number" ></imput></td>
+      </tr>
+      <tr>
+        <td> Joining Date :  </td>
+        <td> <input type="date" id="join" name="join"></td>
+      </tr>
+      <tr>
+        <td> Confirm your Form </td>
+        <td> <input type="button" value="Submit" name="Submit" id="submit"></td>
+    </tr>
+ </table>
+
+    
+</body>
+</html>
