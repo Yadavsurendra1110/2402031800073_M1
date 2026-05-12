@@ -1,0 +1,15 @@
+selector Types 
+class selector
+   denoted by .
+   to call the selector we use 
+id selector
+   denoted by the # symbol
+   to call the selector e use 
+
+universal selector *
+
+
+
+Inline 
+     in html when we give tags inside the tags is known as Inline
+
