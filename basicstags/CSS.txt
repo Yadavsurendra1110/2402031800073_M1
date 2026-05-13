@@ -13,3 +13,9 @@ universal selector *
 Inline 
      in html when we give tags inside the tags is known as Inline
 
+
+CSS positions 
+   Static position 
+      Absolute position
+      Relativepositioning 
+      fixed positioning 

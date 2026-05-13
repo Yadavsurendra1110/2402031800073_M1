@@ -1,0 +1,40 @@
+h1 
+{
+    text-align: center;
+    padding: 2%;
+}
+.box{
+    width:1520px;
+    height:100px;
+    background-color:rgb(242, 0, 255);
+}
+.box1
+ {
+    width:10%;
+    height:620%;
+    background-color:rgb(8, 8, 8);
+    float: left;
+}
+.box2 
+{
+    width:10%;
+    height:620%;
+    background-color:rgb(235, 11, 11);
+    float:right;
+
+}
+
+@media screen and (max-width:600px){
+
+    .box{
+
+        background-color:red;
+        width: 600px;
+        
+    }
+    .box1 
+    {
+        background-color: red;
+    }
+
+}
