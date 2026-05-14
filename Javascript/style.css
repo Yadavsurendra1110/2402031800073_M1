@@ -1,0 +1,37 @@
+h1 
+{
+    text-align: center;
+    color: rgb(15, 217, 35);
+    background-color: black;
+}
+
+.div1
+{
+    background-color:rgb(210, 218, 58);
+    border-radius: 1.2px;
+    height: 120px;
+    width:200px;
+    font-size: 120%;
+    float:left;
+}
+
+.div2
+{
+    
+    background-color:rgb(14, 81, 148);
+    border-radius: 1.2px;
+    height: 120px;
+    width:200px;
+    font-size: 120%;
+    
+}
+
+.div3
+{
+    background-color:rgb(186, 29, 226);
+    border-radius: 1.2px;
+    height: 120px;
+    width:200px;
+    font-size: 120%;
+    float:right;
+}
