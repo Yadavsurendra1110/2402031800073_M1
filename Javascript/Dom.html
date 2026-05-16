@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom </title>
+</head>
+<body>
+    <form id="myform">
+        <input type="text" name="uname">
+        <input type="text" name="paswd">
+        <input type="button" onclick="f()" value="submit" >
+        </form>
+        
+    <script>
+        function f()
+        {
+            var a= document.forms["myform"];
+            var u=a["uname"].value;
+            var p=a["paswd"].value;
+            if(u=="admin" && p=="123")
+        {
+
+            alert("valid");
+        }
+        else 
+        {
+            alert("Invalid");
+        }
+        }
+
+    </script>
+
+
+ 
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <style>
+        header 
+        {
+           background-color: rgb(2, 73, 4);
+           color: azure;
+           text-align: center;
+           font-size: 35px;
+           font-style: italic;
+        }
+        .demo1
+        {
+            box-shadow: 20px;
+            background-color:rgb(183, 20, 69);
+            height:100px;
+            width:300px;
+            top: 60px;
+            position: absolute;
+            color:azure;
+        }
+
+         .demo2
+        {
+            box-shadow: 20px;
+            background-color:rgb(183, 156, 20);
+            height:100px;
+            width:300px;
+            top: 60px;
+            left:350px;
+            position: absolute;
+            color:rgb(0, 2, 2);
+        
+        }
+    </style>
+
+</head>
+<body>
+    <header> Objects </header>
+    <div class="demo1"> 
+        <script> 
+
+        var person = new Object();
+
+        person.lastname= "Surendra";
+        person.firstname="Yadav";
+
+        person.sayHi= ()=>
+        {
+            document.write("Creating the object using the seperate entries: <br><br>");
+            document.write(person.firstname+" "+person.lastname);
+
+        }
+
+        person.sayHi();
+        </script>
+
+    </div>
+
+   <div class="demo2">
+        <script>
+            var Per = { first: "Surendra", last: "Yadav",
+            sayhi : function()
+          {  
+                document.write("Hi "+Per.first+ " " + Per.last);
+          } 
+        }
+
+    Per.sayhi();
+        </script>
+   </div>
+</body>
+</html>

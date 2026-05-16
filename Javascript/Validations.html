@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validation Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 30px;
+        }
+
+        input {
+            width: 250px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>User Validation Form</h2>
+
+<form onsubmit="return validateForm(event)">
+
+    <input type="text" id="name" placeholder="Enter Name">
+    <br>
+
+    <input type="text" id="email" placeholder="Enter Email">
+    <br>
+
+    <input type="password" id="password" placeholder="Enter Password">
+    <br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<script>
+
+function validateForm(event)
+{
+    event.preventDefault();
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+    // ---------------- REGEX PATTERNS ----------------
+
+    var namePattern = /^[A-Za-z ]+$/;
+    var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    var passwordPattern = /^(?=.*[A-Za-z])(?=.*\d).{8,}$/;
+
+    // ---------------- NAME VALIDATION ----------------
+    if(name == "")
+    {
+        alert("Name cannot be empty");
+        return false;
+    }
+
+    if(!namePattern.test(name))
+    {
+        alert("Name should contain only letters");
+        return false;
+    }
+
+    // ---------------- EMAIL VALIDATION ----------------
+    if(email == "")
+    {
+        alert("Email cannot be empty");
+        return false;
+    }
+
+    if(!emailPattern.test(email))
+    {
+        alert("Enter valid email format");
+        return false;
+    }
+
+    // ---------------- PASSWORD VALIDATION ----------------
+    if(password == "")
+    {
+        alert("Password cannot be empty");
+        return false;
+    }
+
+    if(!passwordPattern.test(password))
+    {
+        alert("Password must be 8+ chars with letters & numbers");
+        return false;
+    }
+
+    // SUCCESS
+    alert("Form Submitted Successfully!");
+    return true;
+}
+
+</script>
+
+</body>
+</html>
