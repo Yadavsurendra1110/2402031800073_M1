@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form> 
+
+        Select Product : <select name=" " id="product">
+
+            <option value="20000"> AC </option>
+            <option value="5"> Silver Oak University</option>
+            <option value="90000"> Samsung S26 Ultra</option>
+        </select>
+        <br> <br> 
+        Net Prize <input type="text"  id="prize">
+        <br> <br>
+        Quantity <input type="text" id="quantity">
+        <br><br>
+        Amount <input type="text" id="amount">
+        <br>
+        <script>
+            var product =document.getElementById("product");
+            var quantity=document.getElementById("quantity");
+            var netprize=document.getElementById("prize");
+            var amount=document.getElementById("amount");
+
+            product.addEventListener("change",()=>
+            {
+                amount.value=product.value;
+            });
+
+            amouont.addEventListener("focus",()=>
+        {
+            amount.value=product.value*quantity.value;
+        });
+                </script>
+
+
+<img src="img/bulb1.jpg" alt="" id="bulb">
+
+
+<script>
+
+var a = document.getElementById("bulb");
+
+a.addEventListener("mouseover",()=>{
+
+a.src= "img/bulb2.jpg";
+
+});
+
+a.addEventListener("mouseout",()=>{
+
+a.src= "img/bulb1.jpg";
+
+});
+
+</script>
+
+
+        
+    </form>
+</body>
+</html>

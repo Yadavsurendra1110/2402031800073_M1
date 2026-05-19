@@ -9,18 +9,56 @@
             padding: 30px;
         }
 
-        input {
+        .form
+{
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+        input
+        {
+            display : block;
             width: 250px;
-            padding: 10px;
-            margin: 10px 0;
+            height: 40px;
+
+            border: 2px solid rgb(188, 20, 20);
+            border-radius: 100px;
+
+            padding-left: 10px;
+
+            font-size: 18px;
+            font-family: Arial;
+
+            background-color: rgb(0, 0, 0);
+            color: black;
+
+            outline: none;
+            
         }
 
+        input:focus
+        {
+            border-color: red;
+        }
         button {
             padding: 10px 20px;
+            border-radius: 100px;
+            border-color: aliceblue;
+            
         }
 
         .error {
             color: red;
+        }
+        label 
+        {
+            font-style: bold;
+            
         }
     </style>
 </head>
@@ -31,16 +69,20 @@
 
 <form onsubmit="return validateForm(event)">
 
+
+    <label for="name" > Name  </label>
     <input type="text" id="name" placeholder="Enter Name">
     <br>
 
+    <label for="email" > E-mail  </label>
     <input type="text" id="email" placeholder="Enter Email">
     <br>
 
+    <label for="password" > Password  </label>    
     <input type="password" id="password" placeholder="Enter Password">
     <br>
 
-    <button type="submit">Submit</button>
+    <button type="submit" >Submit</button>
 
 </form>
 
