@@ -1,14 +1,12 @@
-import Head from "./Navigation/Head"
-
-function App()
+import './App.css'
+function  App()
 {
     return(
-        <>
-        <Head/>
-        </>
+        
+        <h1>HIEEE</h1>
+        
     )
 }
-
 export default App
 // import { useState } from 'react'
 // // import reactLogo from './assets/react.svg'
@@ -16,7 +14,7 @@ export default App
 // import heroImg from './assets/hero.png'
 // import GtaVImg from './assets/GtaV.jpg'
 // import Reddead from './assets/Reddead.jpg'
-// import GtaVI from './assets/GtaVI.jp)g'
+// import GtaVI from './assets/GtaVI.jpg'
 // import './App.css'
 
 // function App() {
