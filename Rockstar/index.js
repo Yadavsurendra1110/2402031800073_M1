@@ -50,3 +50,4 @@ let images = [
 // START IMAGE
 
 let current = 0;
+
